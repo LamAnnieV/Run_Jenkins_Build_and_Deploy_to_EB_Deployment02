@@ -1,11 +1,15 @@
-<p align="center">
-<img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
-</p>
-<h1 align="center">Deployment-1.1:  Run a Jenkisn Build and </p> Manually Deploy to Elastic Beanstalk<h1> 
 
-## Step #1 Plan Deployment
+# Run a Jenkisn Build and Manually Deploy to Elastic Beanstalk
 
-![Plan](Deployment_01.1_Pipeline.jpg)
+August 23, 2023
+
+By:  Annie lam
+
+## Purpose
+
+### Step #1 Plan Deployment
+
+![Plan](Deployment_Pipeline.jpg)
 
 ## Step #2 Upload Repository to GitHub
 
@@ -70,13 +74,3 @@ http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/
             
 
   
-- Make sure your documentation includes these sections:
-  - Purpose
-  - Issues
-  - Steps
-  - System Diagram
-  - Optimization (How would make this deployment more efficient)
-
-
-## Deployment instructions Link:
--  [Link to instructions: https://github.com/kura-labs-org/C4_deployment-2/blob/main/Deployment-instructions.md
