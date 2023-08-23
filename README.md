@@ -11,11 +11,11 @@ By:  Annie lam
 
 ![Plan](Deployment_Pipeline.jpg)
 
-## Step #2 Upload Repository to GitHub
+### Step #2 Upload Repository to GitHub
 
 Upload repository to GitHub and generate GitHub token
 
-## Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
+### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
 Log into Jenkins create a build Annie_L_1.1 for the application from GitHub Repository https://github.com/LamAnnieV/Deployment_01.1.git and run the build
 
@@ -23,11 +23,11 @@ Log into Jenkins create a build Annie_L_1.1 for the application from GitHub Repo
 
 ![Build](D01.1_Jenkins_Results.jpg)
 
-## Step #5:  Download Repository from GitHub
+### Step #5:  Download Repository from GitHub
 
 Download Repository, Unzip files and re-zip files
 
-## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
+### Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
 
 **Create EBS Role**
 
@@ -62,15 +62,15 @@ Download Repository, Unzip files and re-zip files
 
 ![AWS](D01.1_AWS_Results.jpg)
   
-## Step #7:  Launch Website
+### Step #7:  Launch Website
 
 http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/
 
 ![Website](D1.01_Website_Result.jpg)
 
-## *Note for Step #6 Debugging process #5
+### *Note for Step #6 Debugging process #5
 
 -  This change should also be made in the GitHub repository.  If this change is made in the repository, this will cause an issue in the Test Stage of the Jenkins Build.  Since the Test Stage imports an object called app from module app.py and that module app.py can no longer be found. In order to resolve this, the code in test_app.py needs to be updated from 'from app import app' to 'from application import app'.  When there are any changes, we need to keep in mind if that change will affect other areas in the pipeline.
             
-
+### *Optimization
   
