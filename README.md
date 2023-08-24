@@ -26,9 +26,23 @@ Log into Jenkins create a build "Deployment02" for the URL Shortner application 
 
 ### Results
 
+****The Build Stage was Successful, but not the Test Stage****
+
 ![Jenkins Unsuccessful Build](Images/Jenkins_Unsuccessful.png)
 
+**Initial Analysis of Failure:**
+
+-     The two errors are related to a file not found and a command not found.  The command is py.test, and py stands for python.  There might be an issue with the python install.
+
 ![Jenkins Output for Unsuccessful Build](Images/Jenkins_Output_Issues.png)
+
+**Analysis:**
+-     From the output file, pip and py.test commands are not found.  Both commands are related to Python
+
+**Resolution**
+
+-     Reinstall Python in the Server
+
 
 ![Jenkins Successful Build](Images/Jenkins_Success.png)
 
