@@ -76,13 +76,11 @@ Download Repository, Unzip files and re-zip files
 -     Submit
 **Successful**
 
-![URL Shortener Successfully Deployed](EBS Results.png)
-  
+![URL Shortener Successfully Deployed](Images/EBS Results.png)
+ 
 ### Step #7:  Launch Website
 
-http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/
-
-![URL Shortner Website](URL Shortner.png)
+![URL Shortener Successfully Deployed](Images/URL Shortner.png)
             
 ### *Optimization
   
