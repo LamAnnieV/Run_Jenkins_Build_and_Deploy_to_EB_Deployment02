@@ -1,5 +1,5 @@
 
-# Run a Jenkisn Build and Manually Deploy to Elastic Beanstalk
+# Run a Jenkisn Build and Manually Deploy a URL Shortner to Elastic Beanstalk
 
 August 23, 2023
 
@@ -16,11 +16,13 @@ Previously, an EC2 that already has Jenkins installed was used.  This deployment
 
 ### Step #2 Upload Repository to GitHub
 
-Upload repository to GitHub and generate GitHub token
+Github is where Jenkins retrieve the files to build and test the application and where Elastic Beanstalk retreives the files to deploy the application.  In order for the EC2, where Jenkins and Elastic Beanstalk is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
 
 ### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
-Log into Jenkins create a build Annie_L_1.1 for the application from GitHub Repository https://github.com/LamAnnieV/Deployment_01.1.git and run the build
+To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, it will be Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+
+Log into Jenkins create a build Deployment02 for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
 ### Results
 
