@@ -3,9 +3,12 @@
 
 August 23, 2023
 
-By:  Annie V Lam
+By:  Annie V Lam - Kura Labs
 
 ## Purpose
+To build and test the URL shortner applicaition using Jenkins and deploy a URL shortner using Elastic Beanstalk.
+
+Previously, an EC2 that already has Jenkins installed was used.  This deployment, requires a new EC2 to be created and Jenkins installed.
 
 ### Step #1 Plan Deployment
 
