@@ -10,9 +10,9 @@ To build and test the URL shortner applicaition using Jenkins and deploy a URL s
 
 Previously, an EC2 that already has Jenkins installed was used.  This deployment, requires a new EC2 to be created and Jenkins installed.
 
-### Step #1 Plan Deployment
+### Step #1 Map out the Deployment
 
-![Plan](Deployment_Pipeline.jpg)
+![Plan](Deployment_Pipeline.png)
 
 ### Step #2 Upload Repository to GitHub
 
