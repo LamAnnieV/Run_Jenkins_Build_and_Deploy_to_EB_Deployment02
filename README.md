@@ -12,7 +12,7 @@ Previously, an EC2 that already has Jenkins installed was used.  This deployment
 
 ### Step #1 Map out the Deployment
 
-[Deployment Flowchart](https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02/blob/main/Images/Deployment_Pipeline.png)
+[Deployment Flowchart](Images/Deployment_Pipeline.png)
 
 ### Step #2 Upload Repository to GitHub
 
