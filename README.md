@@ -26,7 +26,12 @@ Log into Jenkins create a build "Deployment02" for the URL Shortner application 
 
 ### Results
 
-![Build](D01.1_Jenkins_Results.jpg)
+[Jenkins Unsuccessful Build](Images/Jenkins_Unsuccessful.png)
+
+[Jenkins Output for Unsuccessful Build](Images/Jenkins_Output_Issues.png)
+
+[Jenkins Successful Build](Images/Jenkins_Success.png)
+
 
 ### Step #5:  Download Repository from GitHub
 
