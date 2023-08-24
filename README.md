@@ -12,7 +12,7 @@ Previously, an EC2 that already has Jenkins installed was used.  This deployment
 
 ### Step #1 Map out the Deployment
 
-![Plan](Deployment_Pipeline.png)
+![Plan](../Images/Deployment_Pipeline.png)
 
 ### Step #2 Upload Repository to GitHub
 
