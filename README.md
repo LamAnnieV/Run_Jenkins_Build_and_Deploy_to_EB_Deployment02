@@ -33,7 +33,7 @@ Log into Jenkins create a build "Deployment02" for the URL Shortner application 
 ![Jenkins Successful Build](Images/Jenkins_Success.png)
 
 
-### Step #5:  Download Repository from GitHub
+### Step #5:  Download URL Shortner Application Repository from GitHub to be uploaded to the Production Server to be Deployed
 
 Download Repository, Unzip files and re-zip files
 
