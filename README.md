@@ -22,7 +22,7 @@ Github is where Jenkins retrieve the files to build and test the application and
 
 To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, it will be Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
-Log into Jenkins create a build Deployment02 for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
+Log into Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
 ### Results
 
