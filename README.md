@@ -76,11 +76,11 @@ Download Repository, Unzip files and re-zip files
 -     Submit
 **Successful**
 
-![URL Shortener Successfully Deployed](Images/EBS Results.png)
+![URL Shortener Successfully Deployed](Images/EBS_Results.png)
  
 ### Step #7:  Launch Website
 
-![URL Shortener Successfully Deployed](Images/URL Shortner.png)
+![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
 ### *Optimization
   
