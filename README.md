@@ -39,7 +39,7 @@ Log into Jenkins create a build "Deployment02" for the URL Shortner application 
 **Analysis:**
 -     From the output file, pip and py.test commands are not found.  Both commands are related to Python
 
-**Resolution**
+**Resolution:**
 
 -     Reinstall Python in the Server
 
