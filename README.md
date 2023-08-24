@@ -83,9 +83,9 @@ Download Repository, Unzip files and re-zip files
 ![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
 ### Optimization
--     Auto Install Applications in the Virtual Machine
--     Dectect updates in Hithub and fully automate the build and test stage in Jenkins
--     Auto sent files to EBS to deploy when the Build in Jenkins is successful 
+-     Scripts to Install Applications in the Virtual Machine
+-     Scripts to dectect updates in Hithub and fully automate the build and test stage in Jenkins
+-     Auto sent files to EBS server to deploy when the Build in Jenkins is Successful 
 
 
   
