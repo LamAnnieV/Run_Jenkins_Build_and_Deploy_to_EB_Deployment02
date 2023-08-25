@@ -1,5 +1,5 @@
 
-# Run a Jenkisn Build and Manually Deploy a URL Shortner to Elastic Beanstalk
+# Run a Jenkins Build and Manually Deploy a URL Shortner to Elastic Beanstalk
 
 August 23, 2023
 
