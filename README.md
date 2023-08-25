@@ -20,7 +20,7 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 **Generate Token**
 
--     HitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Deployment 01}/Check: Repo &  Admin:Repor_hook/Generate Token
+-     HitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
 
 ### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
