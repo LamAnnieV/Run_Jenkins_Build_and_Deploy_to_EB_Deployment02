@@ -14,15 +14,19 @@ Previously, an EC2 that already has Jenkins installed was used.  This deployment
 
 [Deployment Flowchart](Images/Deployment_Pipeline.png)
 
-### Step #2 Upload Repository to GitHub
+### Step #2 Download Repository to GitHub
 
-Github is where Jenkins retrieve the files to build and test the application and where Elastic Beanstalk retreives the files to deploy the application.  In order for the EC2, where Jenkins and Elastic Beanstalk is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
+Github is the repository where Jenkins retrieve the files to build and test the application and where Elastic Beanstalk retreives the files to deploy the application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
+
+**Generate Token**
+
+-     HitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Deployment 01}/Check: Repo &  Admin:Repor_hook/Generate Token
 
 ### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
 To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
-Log into Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
+In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
 ### INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
 
