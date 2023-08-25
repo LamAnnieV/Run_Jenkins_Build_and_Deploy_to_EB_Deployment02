@@ -24,13 +24,13 @@ To use Jenkins in a new EC2, the EC2 needs to be created and all the proper inst
 
 Log into Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
-INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
+### INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
 
-BASH commands to install JAVA PACKAGE(s):
+### BASH commands to install JAVA pacakage(s):
 -   $sudo apt update   
 -   $sudo apt-get install fontconfig openjdk-17-jre
 
-BASH commands to install JENKINS:  
+### BASH commands to install JENKINS pacakage(s):  
 Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debian/
 -   $curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 -   $echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] tps://pkg.jenkins.io/debian binary/ | sudo tee tc/apt/sources.list.d/jenkins.list > /dev/null
@@ -39,7 +39,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 -   $sudo systemctl start jenkins
 -   $sudo systemctl status jenkins
 
-BASH commands PYTHON PACKAGE(s):
+### BASH commands to install PYTHON pacakage(s):
 -   $sudo apt update
 -   $sudo apt install python3.10-venv
 
@@ -60,7 +60,7 @@ BASH commands PYTHON PACKAGE(s):
 
 **Resolution:**
 
--     Reinstall Python in the Server
+-     Reinstall Python in the Server, using the BASH commands to install PYTHON pacakage(s)
 
 ****Successful Build:****
 
