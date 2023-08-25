@@ -20,9 +20,28 @@ Github is where Jenkins retrieve the files to build and test the application and
 
 ### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
-To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, it will be Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
 Log into Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
+
+INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
+
+BASH commands to install JAVA PACKAGE(s):
+-  $sudo apt update   
+-  $sudo apt-get install fontconfig openjdk-17-jre
+
+BASH commands to install JENKINS:  
+Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debian/
+-  $curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+-   $echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] tps://pkg.jenkins.io/debian binary/ | sudo tee tc/apt/sources.list.d/jenkins.list > /dev/null
+-   $sudo apt update
+-   $sudo apt-get install jenkins
+-   $sudo systemctl start jenkins
+-   $sudo systemctl status jenkins
+
+BASH commands PYTHON PACKAGE(s):
+-   $sudo apt update
+-   $sudo apt install python3.10-venv
 
 ### Results
 
