@@ -74,13 +74,13 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 ![Jenkins Zip_File](Images/Jenkins_Confirmation_of_Zip_File.png)
 
 
-## Step #5:  Download URL Shortner Application from the Jenkins Server to local destop to be uploaded to the Production Server.  
+## Step #5:  Download URL Shortner Application from the Jenkins Server to local desktop to be uploaded to the Production Server.  
 
-The applicaiotn can be uploaded from GitHub, however, downloading the applicaiotn from the Jenkins server will
-1.  Ensure the applications being deployed is the same as the applicated that was tested
-2.  If there are any issues with the deployment, there are test results from Jenkins that can be refrenced
+****The application can be uploaded from GitHub, however, downloading the applicaiotn from the Jenkins server will****
+1.  Ensure the application being deployed is the same as the application that was tested
+2.  If there are any issues with the deployment, there are test results from Jenkins that can be referenced
   
-   Powershell command to secure copy files from a remote Ubuntu server to local Windows Server via SSH tunnel using a local Windows Powershell 
+**Powershell command to secure copy files from a remote Ubuntu server to local Windows Server via SSH tunnel using a local Windows Powershell** 
 
 -   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
    
