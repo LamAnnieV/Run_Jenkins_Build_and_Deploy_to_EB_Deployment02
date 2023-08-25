@@ -66,8 +66,10 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ![Jenkins Successful Build](Images/Jenkins_Success.png)
 
+****Confirmation Zip Files have been successfully generated:****
 ![Jenkins Zip_File](Images/Jenkins_Confirmation_of_Zip_File.png)
-Jenkins_Confirmation_of_Zip_File.png
+
+
 ### Step #5:  Download URL Shortner Application Repository from GitHub to be uploaded to the Production Server to be Deployed
 
 Download Repository, Unzip files and re-zip files
