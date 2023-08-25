@@ -76,16 +76,16 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ## Step #5:  Download URL Shortner Application from the Jenkins Server to local desktop to be uploaded to the Production Server.  
 
-****The application can be uploaded from GitHub, however, downloading the applicaiotn from the Jenkins server will****
+****The application can be uploaded from GitHub, however, downloading the application from the Jenkins server will****
 1.  Ensure the application being deployed is the same as the application that was tested
 2.  If there are any issues with the deployment, there are test results from Jenkins that can be referenced
   
-**Powershell command to secure copy files from a remote Ubuntu server to local Windows Server via SSH tunnel using a local Windows Powershell** 
+**Windows Powershell command to secure copy files from a remote Ubuntu server to local Windows Server via SSH tunnel** 
 
 -   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
    
 
-## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
+## Step #6:  Deploy Application to AWS ELASTIC BEANSTALK
 
 **Create EC2 Role**
 
@@ -99,7 +99,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 -     Next
 -     Role Name:  aws-elasticbeanstalk-service-role/Create Role
 
-**Deploy URL Shortner application in Elastic Beanstalk**
+**Deploy URL Shortner Application to Elastic Beanstalk**
 
 -     AWS/Elastic Beanstalk/Environments/Create Environment/Application Name:/[Platform-4] Platform:  Python/Platform Branch:  Python 3.9 running on 64bit Amazon Linux 2023/Select:  Upload Your code/Version Label:  v#/Select: Local File/Choose File:  {files that were downloaded from the Jenkins Server, Unzipped, then rezipped}/Next
 -     [EC2 instance profile] Select:  Elastic-EC2/Next
@@ -107,6 +107,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 -     [Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
 -     Next
 -     Submit
+- 
 **Successful**
 
 ![URL Shortener Successfully Deployed](Images/EBS_Results.png)
@@ -115,11 +116,9 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
-### Optimization
--     Scripts to Install Applications in the Virtual Machine
--     Scripts to dectect updates in Hithub and fully automate the build and test stage in Jenkins
--     Auto sent files to EBS server to deploy when the Build in Jenkins is Successful
--     Auto send application form the Jenkins Server to the EBS Server when the Build in Jenkins is successful
-
+### Areas for Optimization
+-     Automate installs for Virtual Machines
+-     Fully automate the Build and Test stage in Jenkins, from detecting an update in GitHub to sending the files to the Production Server
+  
 
   
