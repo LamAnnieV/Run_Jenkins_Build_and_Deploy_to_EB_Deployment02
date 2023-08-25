@@ -104,7 +104,8 @@ Download Repository, Unzip files and re-zip files
 ### Optimization
 -     Scripts to Install Applications in the Virtual Machine
 -     Scripts to dectect updates in Hithub and fully automate the build and test stage in Jenkins
--     Auto sent files to EBS server to deploy when the Build in Jenkins is Successful 
+-     Auto sent files to EBS server to deploy when the Build in Jenkins is Successful
+-     Auto send application form the Jenkins Server to the EBS Server when the Build in Jenkins is successful
 
 
   
