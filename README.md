@@ -107,7 +107,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 -     [Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
 -     Next
 -     Submit
-- 
+  
 **Successful**
 
 ![URL Shortener Successfully Deployed](Images/EBS_Results.png)
