@@ -16,7 +16,7 @@ Previously, an EC2 that already has Jenkins installed was used.  This deployment
 
 ### Step #2 Download Repository to GitHub
 
-Github is the repository where Jenkins retrieve the files to build and test the application and where Elastic Beanstalk retreives the files to deploy the application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
+Github is the repository where Jenkins retrieve the files to build and test the application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
 
 **Generate Token**
 
