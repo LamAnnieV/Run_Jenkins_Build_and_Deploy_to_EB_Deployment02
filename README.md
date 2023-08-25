@@ -5,16 +5,16 @@ August 23, 2023
 
 By:  Annie V Lam - Kura Labs
 
-## Purpose
+# Purpose
 To build and test the URL shortner applicaition using Jenkins and deploy a URL shortner using Elastic Beanstalk.
 
 Previously, an EC2 that already has Jenkins installed was used.  This deployment, requires a new EC2 to be created and Jenkins installed.
 
-### Step #1 Map out the Deployment
+## Step #1 Map out the Deployment
 
 [Deployment Flowchart](Images/Deployment_Pipeline.png)
 
-### Step #2 Download Repository to GitHub
+## Step #2 Download Repository to GitHub
 
 Github is the repository where Jenkins retrieve the files to build and test the application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2s.
 
@@ -22,7 +22,7 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 -     HitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
 
-### Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
+## Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
 To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
@@ -74,7 +74,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 ![Jenkins Zip_File](Images/Jenkins_Confirmation_of_Zip_File.png)
 
 
-### Step #5:  Download URL Shortner Application from the Jenkins Server to local destop to be uploaded to the Production Server.  
+## Step #5:  Download URL Shortner Application from the Jenkins Server to local destop to be uploaded to the Production Server.  
 
 The applicaiotn can be uploaded from GitHub, however, downloading the applicaiotn from the Jenkins server will
 1.  Ensure the applications being deployed is the same as the applicated that was tested
@@ -85,7 +85,7 @@ The applicaiotn can be uploaded from GitHub, however, downloading the applicaiot
 -   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
    
 
-### Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
+## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
 
 **Create EC2 Role**
 
@@ -111,7 +111,7 @@ The applicaiotn can be uploaded from GitHub, however, downloading the applicaiot
 
 ![URL Shortener Successfully Deployed](Images/EBS_Results.png)
  
-### Step #7:  Launch Website
+## Step #7:  Launch Website
 
 ![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
