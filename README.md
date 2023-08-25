@@ -27,12 +27,12 @@ Log into Jenkins create a build "Deployment02" for the URL Shortner application 
 INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
 
 BASH commands to install JAVA PACKAGE(s):
--  $sudo apt update   
--  $sudo apt-get install fontconfig openjdk-17-jre
+-   $sudo apt update   
+-   $sudo apt-get install fontconfig openjdk-17-jre
 
 BASH commands to install JENKINS:  
 Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debian/
--  $curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+-   $curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 -   $echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] tps://pkg.jenkins.io/debian binary/ | sudo tee tc/apt/sources.list.d/jenkins.list > /dev/null
 -   $sudo apt update
 -   $sudo apt-get install jenkins
