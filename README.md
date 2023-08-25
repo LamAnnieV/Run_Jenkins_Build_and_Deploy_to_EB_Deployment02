@@ -116,7 +116,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
-### Areas for Optimization
+## Areas for Optimization
 -     Automate installs for Virtual Machines
 -     Fully automate the Build and Test stage in Jenkins, from detecting an update in GitHub to sending the files to the Production Server
   
