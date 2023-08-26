@@ -81,7 +81,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 1.  Ensure the application being deployed is the same as the application that was built and tested in Jenkins
 2.  If there are any issues with the deployment, there are test results from Jenkins that can be referenced
 
-### Before secure copining the files from the vm to the local machine, a SSH Tunnel is required
+### Before secure copying the files from the virtual machine to the local machine, a SSH Tunnel is required
 
 **How to create an SSH Tunnel**
 
