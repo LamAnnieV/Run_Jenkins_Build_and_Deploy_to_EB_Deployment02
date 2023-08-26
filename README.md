@@ -89,19 +89,19 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
    
      In the local machine's command line:
     
--   $ssh-keygen
--   $cd path_where the id_rsa.pub_is_located
--   $cat id_rsa.pub
--   copy the public key
+     -   $ssh-keygen
+     -   $cd path_where the id_rsa.pub_is_located
+     -   $cat id_rsa.pub
+     -   copy the public key
   
 2.  Pass the key to the VM’s autherized_keys file
 
      In the Jenkins server command line:
 
--   $cd ~
--   $cd .ssh
--   $sudo nano authorized_keys
--   paste the puble key from your local machine in the authorized_keys file, save, and exit
+     -   $cd ~
+     -   $cd .ssh
+     -   $sudo nano authorized_keys
+     -   paste the puble key from your local machine in the authorized_keys file, save, and exit
 
 **Windows Powershell command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
 
