@@ -83,7 +83,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ### Before secure copying the files from the virtual machine to the local machine, a SSH Tunnel is required
 
-**How to create a SSH Tunnel**
+**How to create a SSH Tunnel:**
 
 1.  Get the public key from local machine
    
@@ -92,16 +92,16 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
      -   $ssh-keygen
      -   $cd path_where the id_rsa.pub_is_located
      -   $cat id_rsa.pub
-     -   copy the public key
+     -    Copy the public key
   
-2.  Pass the key to the VM’s autherized_keys file
+2.  Pass the key to the Virtual Machines's autherized_keys file
 
      In the Jenkins server command line:
 
      -   $cd ~
      -   $cd .ssh
      -   $sudo nano authorized_keys
-     -   paste the puble key from your local machine in the authorized_keys file, save, and exit
+     -    Paste the public key from your local machine into the virtual machines's authorized_keys file, save, and exit
 
 **Windows Powershell command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
 
