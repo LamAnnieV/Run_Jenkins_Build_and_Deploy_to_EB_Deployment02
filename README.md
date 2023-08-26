@@ -6,9 +6,9 @@ August 23, 2023
 By:  Annie V Lam - Kura Labs
 
 # Purpose
-To build and test the URL shortner applicaition using Jenkins and deploy a URL shortner using Elastic Beanstalk.
+To build and test the URL shortener applicaition using Jenkins and deploy the URL shortener using Elastic Beanstalk.
 
-Previously, an EC2 that already has Jenkins installed was used.  This deployment, requires a new EC2 to be created and Jenkins installed.
+Previously, an EC2 that already has Jenkins installed was used.  This deployment, a new EC2 server was created and Jenkins installed.
 
 ## Step #1 Map out the Deployment
 
@@ -20,15 +20,15 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 **Generate Token**
 
--     HitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
+-     GitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
 
 ## Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
-To use Jenkins in a new EC2, the EC2 needs to be created and all the proper installs to use Jenkins and to read the programing lanuague that the application is written in. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+Jenkins is used to automate the Build, Test, and Zipping of the Application files that are need in the deployment stage.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
 In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
-### INSTRUCTIONS for INSTALLS to an Ubuntu OS in AWS
+### INSTRUCTIONS for INSTALLS for the Staging server ran Ubuntu OS in AWS
 
 ### BASH commands to install JAVA pacakage(s):
 -   $sudo apt update   
@@ -75,13 +75,35 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 ![Jenkins Zip_File](Images/Jenkins_Confirmation_of_Zip_File.png)
 
 
-## Step #5:  Download URL Shortner Application from the Jenkins Server to local desktop to be uploaded to the Production Server.  
+## Step #5:  Secure Copy URL Shortner Application Files from the Jenkins Server to local desktop to be uploaded to the Production Server.  
 
-****The application can be uploaded from GitHub, however, downloading the application from the Jenkins server will****
-1.  Ensure the application being deployed is the same as the application that was tested
+****Deploying the application that is from the Jenkins server will****
+1.  Ensure the application being deployed is the same as the application that was built and tested in Jenkins
 2.  If there are any issues with the deployment, there are test results from Jenkins that can be referenced
+
+### Before secure copining the files from the vm to the local machine, a SSH Tunnel is required
+
+**How to create an SSH Tunnel**
+
+1.  Get the public key from local machine
+   
+     In the local machine's command line:
+    
+-   $ssh-keygen
+-   $cd path_where the id_rsa.pub_is_located
+-   $cat id_rsa.pub
+-   copy the public key
   
-**Windows Powershell command to secure copy files from a remote Ubuntu server to local Windows Server via SSH tunnel** 
+2.  Pass the key to the VM’s autherized_keys file
+
+     In the Jenkins server command line:
+
+-   $cd ~
+-   $cd .ssh
+-   $sudo nano authorized_keys
+-   paste the puble key from your local machine in the authorized_keys file, save, and exit
+
+**Windows Powershell command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
 
 -   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
    
