@@ -103,7 +103,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
      -   $sudo nano authorized_keys
      -    Paste the public key from your local machine into the virtual machines's authorized_keys file, save, and exit
 
-**Windows Powershell command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
+**BASH command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
 
 -   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
    
