@@ -83,7 +83,7 @@ Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debia
 
 ### Before secure copying the files from the virtual machine to the local machine, a SSH Tunnel is required
 
-**How to create an SSH Tunnel**
+**How to create a SSH Tunnel**
 
 1.  Get the public key from local machine
    
